@@ -1,0 +1,65 @@
+.section_paragraph-image {
+
+  background: #E5E5E5;
+  color: #999999;
+
+  padding: 35px 0;
+  margin-bottom: 35px;
+
+  @include md {
+    padding: 70px 0;
+    margin-bottom: 70px;
+  }
+
+  @include lg {
+    padding: 140px 0;
+    margin-bottom: 140px;
+  }
+
+  a.main {
+    color: $color_secondary;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+    font-size: .8em;
+
+    svg {
+      margin-left: 5px;
+      transition: .5s;
+      path {
+        fill: $color_secondary;
+        transition: .5s;
+      }
+    }
+
+    &:hover {
+
+      color: #000;
+
+
+      svg {
+        margin-left: 10px;
+        path {
+          fill: #000;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.page-about {
+  .cta-bar {
+    @include md {
+      margin-top: 55px;
+    }
+
+    @include lg {
+      margin-top: 110px;
+    }
+
+  }
+}

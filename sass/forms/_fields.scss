@@ -1,0 +1,143 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	background: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #999;
+	padding: 3px;
+	border-radius: 0;
+	transition: .5s;
+	&:focus {
+		border-bottom: .5px solid #000;
+		padding-left: 10px;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+
+.comment-form {
+
+	input, textarea {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+    transition: .5s;
+		margin-bottom: 25px;
+    &:focus {
+      border-bottom: .5px solid #000;
+      padding-left: 10px;
+			color: #000;
+    }
+  }
+
+	p.form-submit {
+
+		.submit {
+			background: none;
+			border: none;
+			border-radius: 0;
+			display: inherit;
+			color: $color_secondary;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1em;
+			padding: 10px 0;
+			border-bottom: 1px solid  $color_secondary;
+			&:hover {
+				color: #000;
+				border-bottom: 3px solid $color_secondary;
+			}
+		}
+
+	}
+
+}
+
+
+
+.contact-form {
+
+	h3 {
+		text-align: center;
+		font-size: 36px !important;
+		span {
+			color: $color_secondary;
+		}
+		&:after {
+			display: none;
+		}
+	}
+
+  padding: 90px 15px;
+  ::placeholder {
+    color: #E6E6E6;
+  }
+  h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    @include md {
+      margin-bottom: 65px;
+    }
+  }
+  textarea {
+    margin-bottom: 50px;
+  }
+  input, textarea {
+    color: $color_secondary;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+    transition: .5s;
+    &:focus {
+      border-bottom: .5px solid $color_secondary;
+      padding-left: 10px;
+    }
+  }
+  .wpcf7-list-item {
+    display: block;
+  }
+  .wpcf7-submit {
+		margin: 0 auto;
+		display: inherit;
+		color: $color_secondary;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+    padding: 10px 0;
+    border-bottom: 1px solid  $color_secondary;
+    &:hover {
+			color: #000;
+      border-bottom: 3px solid $color_secondary;
+    }
+  }
+}

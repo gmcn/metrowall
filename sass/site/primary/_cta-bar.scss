@@ -1,0 +1,52 @@
+.cta-bar {
+  background: $color_secondary;
+  padding: 50px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-align: center;
+
+  @include lg {
+    text-align: left;
+  }
+
+  &_header {
+    color: #000;
+    font-size: 33px !important;
+    margin-bottom: 0
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  &_link {
+    text-align: center;
+    margin-top: 15px;
+
+    @include lg {
+      text-align: right;
+      margin-top: 0;
+    }
+
+  }
+
+  & a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    transition: .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+
+    &:hover {
+      border: 1px solid #000;
+      color: #000
+    }
+
+  }
+
+
+}

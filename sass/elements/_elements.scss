@@ -1,0 +1,115 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+.header_bg {
+	height: 225px;
+
+	&.large {
+		height: 600px;
+		position: relative;
+
+		h1 {
+			color: #fff;
+			text-align: center;
+			text-shadow: 0 0 25px black;
+			letter-spacing: 7px;
+			margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+
+			@include md {
+
+				font-size: 45px;
+
+			}
+
+			@include lg {
+
+				font-size: 60px;
+
+			}
+
+			&:after {
+				display: none;
+			}
+
+		}
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 400px;
+			background: rgb(255,255,255);
+			background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%);
+			position: absolute;
+			top: 0;
+		}
+
+		&:after {
+			content: "";
+			width: 100%;
+			height: 120px;
+			background: rgb(255,255,255);
+			background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+			position: absolute;
+			bottom: 0;
+		}
+
+	}
+
+}
+
+.wpcf7-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
+
+
+/*--------------------------------------------------------------
+# flexi
+--------------------------------------------------------------*/
+@import "flexi/hero";
+@import "flexi/usp";
+@import "flexi/section-intro";
+@import "flexi/section-paragraph";
+@import "flexi/section-products";
+@import "flexi/section-video";
+@import "flexi/section-partners";
+@import "flexi/section-testimonials";
+@import "flexi/latest-projects";
+@import "flexi/statistics";

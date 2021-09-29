@@ -1,0 +1,58 @@
+.contact {
+
+  &-details {
+
+    .col-md-4 {
+      border-right: 1px solid #E5E5E5;
+      padding: 50px;
+
+      &:nth-child(3) {
+        border-right: none;
+      }
+
+    }
+
+    color: #666;
+
+    img {
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: #666;
+
+      &:hover {
+        color: $color_secondary;
+      }
+
+    }
+
+    p.title {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      color: #000;
+      letter-spacing: 7px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+  &-form {
+
+    p.title {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+      color: #000;
+      letter-spacing: 7px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+}

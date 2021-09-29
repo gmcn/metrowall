@@ -1,0 +1,72 @@
+  .statistics {
+  background: #F6F6F6;
+  margin-bottom: 50px;
+  padding: 45px 0 35px 0;
+
+  @include md {
+    padding: 90px 0 75px 0;
+  }
+
+  @include lg {
+    padding: 180px 0 150px 0;
+  }
+  &__counts {
+    p {
+      color: #666;
+      line-height: 2em;
+      margin-bottom: 30px;
+      @include md {
+        width: 60%;
+      }
+    }
+    &__wrapper {
+      
+    }
+  }
+  &__count {
+    @include md {
+      width: 23% !important;
+    }
+    span {
+      font-size: 72px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      color: #505050;
+      line-height: 1.2em;
+    }
+    p {
+      width: 100%;
+      font-size: 12px;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #999;
+      margin-bottom: 15px;
+      @include md {
+        margin-bottom: 0;
+      }
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  &_exp {
+    padding: 150px 25px 15px 25px;
+    border: 5px solid #000;
+    font-weight: 600;
+    span {
+      font-family: "Oswald", sans-serif;
+      font-size: 150px;
+      color: #000;
+      font-weight: 500;
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: $color_secondary;
+      line-height: 1.8em;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}

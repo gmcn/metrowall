@@ -1,0 +1,41 @@
+.section-usp {
+
+  text-align: center;
+
+  margin-bottom: 40px;
+  @include md {
+    margin-bottom: 80px;
+  }
+  @include lg {
+    margin-bottom: 175px;
+  }
+
+  @include md {
+    text-align: left;
+  }
+
+  img {
+    margin-bottom: 25px;
+
+    @include md {
+      margin-bottom: 0;
+    }
+
+  }
+
+   &__title {
+
+     color: $color_secondary !important;
+     font-size: 18px;
+     font-weight: 500;
+     font-family: 'Montserrat', sans-serif;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+
+  }
+
+  p {
+    color: #999;
+  }
+
+}

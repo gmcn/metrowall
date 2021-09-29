@@ -1,0 +1,147 @@
+footer {
+
+  background: #E2E2E2;
+  padding: 5px;
+  color: #666;
+
+  &.site-footer {
+    padding-top: 63px;
+    padding-bottom: 30px;
+    @include md {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include lg {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+  }
+
+  .footer_contact {
+    text-align: center;
+    @include md {
+      text-align: left;
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.1em;
+
+    &:after {
+      display: none;
+    }
+
+  }
+
+  ul {
+    padding: 0;
+    margin: 50px 0 0 0;
+    list-style: none;
+  }
+
+  ul.social {
+    margin-top: 20px;
+    li {
+      display: inline-block;
+      padding-right: 5px;
+
+      path {
+        transition: .5s;
+      }
+
+      &:hover {
+
+        path {
+          fill: $color_secondary;
+        }
+
+      }
+
+    }
+
+
+
+  }
+
+  .footer_branding {
+
+    text-align: center;
+    position: relative;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    @include md {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__copy {
+      font-size: 12px;
+      letter-spacing: 4px;
+      margin-top: 20px;
+      font-family: 'Montserrat', sans-serif;
+      @include md {
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0;
+      }
+
+    }
+
+  }
+
+  .footer_feed {
+    h1, h2, h3, h4 {
+      text-align: center;
+      @include md {
+        text-align: right;
+      }
+    }
+  }
+
+  text-align: right;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  svg {
+    margin-right: 10px;
+    height: 10px;
+
+    path {
+      fill: #999;
+    }
+
+  }
+
+  p.date {
+    img {
+      margin-right: 10px;
+    }
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    margin-bottom: 25px;
+  }
+  a {
+    // font-style: italic;
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: #666
+  }
+}

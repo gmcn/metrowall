@@ -1,0 +1,35 @@
+.section-testimonials {
+  position: relative;
+  margin-bottom: 35px;
+
+  @include md {
+    margin-bottom: 75px;
+  }
+
+  @include lg {
+    margin-bottom: 150px;
+  }
+
+  .swiper-slide {
+
+    padding: 0 15%;
+    line-height: 1.8em;
+    text-align: center;
+    font-style: italic;
+
+    p.byline {
+      color: $color_secondary;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: 400;
+      font-family: $font__heading;
+      font-style: normal;
+    }
+
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: #000;
+  }
+
+}

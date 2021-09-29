@@ -1,0 +1,168 @@
+.heroSwiper {
+
+
+  &_contact {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    color: #fff;
+
+    @include md {
+      bottom: 55px;
+      left: 55px;
+    }
+
+    a {
+      color: #fff;
+      display: block;
+
+      font-size: .75em;
+
+      @include md {
+        font-size: .85em;
+      }
+
+
+      &.email {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      &.tel {
+        color: #ccc;
+      }
+
+      &:hover {
+        color: $color_secondary
+      }
+
+    }
+
+
+  }
+
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  img {
+    width: 100%;
+
+    @include md {
+      height: 100%;
+    }
+
+  }
+
+  margin-bottom: 25px;
+
+  @include md {
+    margin-bottom: 50px;
+    height: 100vh;
+  }
+
+  @include lg {
+    margin-bottom: 100px;
+  }
+
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    @include md {
+      content: "";
+      width: 100%;
+      height: 400px;
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%);
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    @include md {
+      content: "";
+      width: 100%;
+      height: 120px;
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    text-shadow: 0 0 25px black;
+    letter-spacing: 7px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+
+    @include md {
+      width: 100%;
+      font-size: 45px;
+
+    }
+
+    @include lg {
+
+      font-size: 60px;
+
+    }
+
+    &:after {
+      display: none;
+    }
+
+  }
+
+  .swiper-button-prev {
+
+    @include lg {
+      left: 55px;
+    }
+
+  }
+
+  .swiper-button-next {
+
+    @include lg {
+      right: 55px;
+    }
+
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    color: #fff;
+    transition: .5s;
+
+    &:hover {
+      color: $color_secondary;
+    }
+
+  }
+
+}
