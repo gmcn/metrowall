@@ -78,71 +78,10 @@
 
 						<?php
 						require_once 'vendor/autoload.php'; // change path as needed
+						require_once 'template-parts/facebook.php'; // change path as needed
+						?>
 
-						$fb = new \Facebook\Facebook([
-						  'app_id' => '2140201249495949',
-						  'app_secret' => '24a7612d4e6bf0b10aed02945f7d1144',
-						  'default_graph_version' => 'v2.10',
-						  //'default_access_token' => '{access-token}', // optional
-						]);
 
-						// Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
-						//   $helper = $fb->getRedirectLoginHelper();
-						//   $helper = $fb->getJavaScriptHelper();
-						//   $helper = $fb->getCanvasHelper();
-						//   $helper = $fb->getPageTabHelper();
-
-						try {
-						  // Get the \Facebook\GraphNodes\GraphUser object for the current user.
-						  // If you provided a 'default_access_token', the '{access-token}' is optional.
-
-							// $response = $fb->get('/me?fields=posts{id,created_time,message, permalink_url}', 'EAAeagG85W40BANgAtgZCy0tHp0u1icDV1EdhZBKj7pc5ZCVg1Bi1ZBmlTq9rSaTTDiSfkjfC9ZCKGY395XTqAzi0C8LmH9ZCZBEvIuQ6uZBxP6ZC2vApH6GDgNsWy7SBYIo2m0qgAFb39CYw1I32TBW7L0OJhgvGNgQyP4OulSwnbjSjm5qragdYT');
-							$response = $fb->get('1353389074803101?fields=feed.limit(2){id,created_time,message,permalink_url}', 'EAAeagG85W40BAEKgQrpoWWjwZBubs6tiyl1LCwd94ZBb1RVmX8AUsDKOeFZBqumLjbbmUJbwL9fjv3EiZCIMFjyqyeWDr6A7YVbva97igP8gjAkQZCAH55SLOKz5qbJjOuvUiNTkgXfJ7wxgacJcWRmSyWvqVAzqmm1ZCZBRXMDhgZDZD');
-
-							} catch(FacebookExceptionsFacebookResponseException $e) {
-							  echo 'Graph returned an error: ' . $e->getMessage();
-							  exit;
-							} catch(FacebookExceptionsFacebookSDKException $e) {
-							  echo 'Facebook SDK returned an error: ' . $e->getMessage();
-							  exit;
-							}
-
-						$graphNode = $response->getGraphNode();
-
-						// echo $graphNode;
-
-						$array = json_decode($graphNode, true);
-						$resultArray = isset($array['feed']) ? $array['feed'] : [];
-
-						foreach($resultArray as $result){
-
-							$message = $result['message'];
-							$shortMessage = substr($message, 0, 80);
-							$permalink = $result['permalink_url'];
-							$id = $result['id'];
-							$shortId = substr($id, 0, 10);
-							$orgDate = $result['created_time']['date'];
-							$newDate = date("j F @ G:i", strtotime($orgDate));
-
-							// if($i < 2) {
-								echo ' <a href="' . $permalink . '" target="_blank">';
-								echo '<div>';
-								echo '<p>';
-								echo $shortMessage.'...';
-
-								// echo 'www.fb.com/' . $shortId;
-
-								echo '<p>';
-								echo '</a>';
-
-								echo '<p class="date"><svg xmlns="http://www.w3.org/2000/svg" width="8.501" height="17" viewBox="0 0 8.501 17">
-									<path id="facebook" d="M13.136,2.823h1.552V.12A20.04,20.04,0,0,0,12.427,0c-2.238,0-3.77,1.407-3.77,3.994V6.375H6.187V9.4H8.656V17h3.027V9.4h2.369l.376-3.022H11.683V4.294c0-.873.236-1.471,1.453-1.471Z" transform="translate(-6.187)"/>
-								</svg>' . $newDate .'</p>';
-								echo '</div>';
-
-						}
-
-						 ?>
 
 					 <?php endif; ?>
 

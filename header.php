@@ -108,7 +108,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 <?php wp_head(); ?>
 
-
 </head>
 
 <body <?php body_class(); ?>>
