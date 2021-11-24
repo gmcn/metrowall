@@ -77,8 +77,8 @@
 					<?php if (!is_user_logged_in()): ?>
 
 						<?php
-						require_once 'vendor/autoload.php'; // change path as needed
-						require_once 'template-parts/facebook.php'; // change path as needed
+						// require_once 'vendor/autoload.php'; // change path as needed
+						// require_once 'template-parts/facebook.php'; // change path as needed
 						?>
 
 
