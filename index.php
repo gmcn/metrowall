@@ -35,11 +35,12 @@ get_header(); ?>
 			<button class="filter__item filter__item--active" type="button" data-filter="*">ALL</button>
 			<button class="filter__item" type="button" data-filter=".__js_news">NEWS</button>
 			<button class="filter__item" type="button" data-filter=".__js_industry">INDUSTRY</button>
-			<button class="filter__item" type="button" data-filter=".__js_partitions">PARTITIONS</button>
-			<button class="filter__item" type="button" data-filter=".__js_doors">DOORS</button>
+			<!-- <button class="filter__item" type="button" data-filter=".__js_partitions">PARTITIONS</button> -->
+			<!-- <button class="filter__item" type="button" data-filter=".__js_doors">DOORS</button> -->
 			<button class="filter__item" type="button" data-filter=".__js_vetro">VETRO</button>
 			<button class="filter__item" type="button" data-filter=".__js_lp-series">LP SERIES</button>
 			<button class="filter__item" type="button" data-filter=".__js_dg-series">DG SERIES</button>
+			<button class="filter__item" type="button" data-filter=".__js_sustainability">Sustainability</button>
 		</div>
 
 		<div class="grid-wrapper __js_news-list-filter">
