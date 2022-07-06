@@ -8,7 +8,7 @@
 			<button class="filter__item" type="button" data-filter=".__js_vetro">VETRO</button>
 			<button class="filter__item" type="button" data-filter=".__js_lp-series">LP SERIES</button>
 			<button class="filter__item" type="button" data-filter=".__js_dg-series">DG SERIES</button>
-      <button class="filter__item" type="button" data-filter=".__js_profiles">Profiles</button>
+      <button class="filter__item" type="button" data-filter=".__js_sustainability">Sustainability</button>
 		</div>
 
 		<div class="grid-wrapper __js_news-list-filter">
@@ -39,7 +39,12 @@
 
 
               <div class="download__item__stamp <?php echo $download_colour ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo_black.svg" alt="" loading="lazy">
+								<?php if ($download_colour == 'dark-grey' || $download_colour == 'grey'): ?>
+									<img src="<?php echo get_template_directory_uri(); ?>/images/logo_black.svg" alt="" loading="lazy">
+								<?php else : ?>
+									<img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.svg" alt="" loading="lazy">
+								<?php endif; ?>
+
               </div>
 
 					</div>
@@ -99,7 +104,7 @@
 									    document.getElementById("download<?php echo $i ?>").onclick = function () {
 													//alert('you clicked me');
 									        // window.open = "<?php echo $download_file ?>";
-													window.open('<?php echo $download_file ?>', '_blank').focus();
+													// window.open('<?php echo $download_file ?>', '_blank').focus();
 									    };
 									</script>
 
