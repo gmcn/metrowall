@@ -65,6 +65,27 @@
 								</a>
 
 							</li>
+
+
+							<li>
+
+								<a href="https://www.youtube.com/channel/UCCDOewzqvY1ziSD3AFiTHmA" target="_blank">
+
+
+									<svg xmlns="http://www.w3.org/2000/svg" width="27" height="19.836" viewBox="0 0 27 19.836">
+										  <g id="youtube-svgrepo-com" transform="translate(0 -6.5)">
+										    <g id="Group_6" data-name="Group 6" transform="translate(0 6.5)">
+										      <path id="Path_7" data-name="Path 7" d="M21.631,6.5H5.369A5.384,5.384,0,0,0,0,11.886v9.065a5.383,5.383,0,0,0,5.369,5.386H21.631A5.384,5.384,0,0,0,27,20.951V11.886A5.384,5.384,0,0,0,21.631,6.5ZM25.9,20.951a4.28,4.28,0,0,1-4.267,4.284H5.369A4.28,4.28,0,0,1,1.1,20.951V11.886A4.28,4.28,0,0,1,5.369,7.6H21.631A4.28,4.28,0,0,1,25.9,11.886Z" transform="translate(0 -6.5)"/>
+										      <path id="Path_8" data-name="Path 8" d="M26.487,20.445l-7.655-4.484a.552.552,0,0,0-.832.477v8.967a.552.552,0,0,0,.832.477L26.487,21.4a.553.553,0,0,0,0-.954Zm-7.382,4V17.4l6.009,3.52Z" transform="translate(-8.095 -10.729)"/>
+										    </g>
+										  </g>
+										</svg>
+
+
+								</a>
+
+							</li>
+
 						</ul>
 				</div>
 				<div class="col-md-4 footer_branding">
