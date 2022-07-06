@@ -35,6 +35,9 @@
 				<div class="masonry-item gallery-item <?php echo "__js_" . implode( ' __js_', $field ); ?>">
 
 
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/giXco2jaZ_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 						<?php
 							$image = get_sub_field('gallery_item_image');
 							if( $image ):
