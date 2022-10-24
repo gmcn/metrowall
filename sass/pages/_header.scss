@@ -70,12 +70,16 @@ header {
     a {
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
+      font-size: 12px;
       transition: .5s;
       text-align: center;
       font-weight: 500;
       letter-spacing: 1px;
       color: #000 !important;
+
+      @include lg {
+        font-size: 14px;
+      }
 
       &:hover {
         color: $color_secondary !important;
@@ -94,7 +98,7 @@ header {
   a.quote {
     background: $color_secondary;
     color: #fff !important;
-    padding: 5px 10px;
+    padding: 5px;
     font-weight: 500;
 
     @include lg {
@@ -132,18 +136,25 @@ header {
       // margin-top: 20px;
       padding: 0;
       margin: 0;
+
+
       li {
 
         display: inline-block;
-        padding-right: 5px;
-        @include lg {
+        padding-right: 0;
+
+        @include xxl {
           padding-right: 20px;
         }
 
 
         path {
           transition: .5s;
-          fill: #fff;
+          fill: #000;
+          @include md {
+            fill: #fff;
+          }
+
         }
 
         &:hover {
@@ -166,11 +177,22 @@ header {
     // margin-top: 20px;
     padding: 0;
     margin: 0;
+    display: flex;
+    list-style: none;
     li {
-      display: inline-block;
-      padding-right: 5px;
+      justify-content: space-evenly;
+      padding: 5px;
+      background: none;
+
       @include lg {
-        padding-right: 20px;
+        // padding-right: 20px;
+      }
+
+      svg {
+
+        // width: 17px;
+        // height: 17px;
+
       }
 
       path {
@@ -191,6 +213,46 @@ header {
 
 
   }
+
+
+}
+
+a.quotemobile {
+  background: $color_secondary;
+  color: #fff !important;
+  padding: 5px 10px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  @include lg {
+    padding: 5px 20px;
+  }
+
+  svg {
+    margin-left: 5px;
+    path {
+      transition: .5s;
+    }
+  }
+
+  &:hover {
+    color: #000 !important;
+
+    svg {
+      path {
+        fill: #000;
+      }
+    }
+
+
+
+  }
+
 
 
 }
