@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 footer_contact">
-					<h4>Get In Touch</h4>
+					<h4><a href="/contact#contact-form">Get In Touch</a></h4>
 					<p><a href="tel:1-888-798-8806">1-888-798-8806</a> <br>
 						<a href="mailto:sales@metro-wall.com">sales@metro-wall.com</a><br>
 						Mon - Fri 9am - 5pm</p>
@@ -98,8 +98,8 @@
 					<?php if (!is_user_logged_in()): ?>
 
 						<?php
-						// require_once 'vendor/autoload.php'; // change path as needed
-						// require_once 'template-parts/facebook.php'; // change path as needed
+						require_once 'vendor/autoload.php'; // change path as needed
+						require_once 'template-parts/facebook.php'; // change path as needed
 						?>
 
 
