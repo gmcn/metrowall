@@ -50,16 +50,3 @@
   }
 
 }
-
-.page-about {
-  .cta-bar {
-    @include md {
-      margin-top: 55px;
-    }
-
-    @include lg {
-      margin-top: 110px;
-    }
-
-  }
-}

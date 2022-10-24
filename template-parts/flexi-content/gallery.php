@@ -9,13 +9,14 @@
 			<div class="filter controls news-list__filter gallery-list__filter">
 
 				<button class="filter__item filter__item--active" type="button" data-filter="*">all</button>
-				<button class="filter__item" type="button" data-filter=".__js_news">News</button>
+				<!-- <button class="filter__item" type="button" data-filter=".__js_news">News</button>
 				<button class="filter__item" type="button" data-filter=".__js_industry">INDUSTRY</button>
 				<button class="filter__item" type="button" data-filter=".__js_partitions">PARTITIONS</button>
-				<button class="filter__item" type="button" data-filter=".__js_doors">DOORS</button>
+				<button class="filter__item" type="button" data-filter=".__js_doors">DOORS</button> -->
 				<button class="filter__item" type="button" data-filter=".__js_vetro">VETRO</button>
 				<button class="filter__item" type="button" data-filter=".__js_lp-series">LP SERIES</button>
 				<button class="filter__item" type="button" data-filter=".__js_dg-series">DG SERIES</button>
+				<button class="filter__item" type="button" data-filter=".__js_extend">Extend</button>
 
 			</div>
 
@@ -35,7 +36,7 @@
 				<div class="masonry-item gallery-item <?php echo "__js_" . implode( ' __js_', $field ); ?>">
 
 
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/giXco2jaZ_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/giXco2jaZ_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 
 						<?php

@@ -32,7 +32,7 @@
 
   }
 
-  & a {
+  & a.button {
     color: #fff;
     border: 1px solid #fff;
     padding: 10px 30px;
@@ -49,4 +49,38 @@
   }
 
 
+}
+
+
+
+.page-contact {
+
+  .cta-bar {
+
+    background: $color_primary;
+
+    &_header {
+
+
+      color: $color_secondary;
+
+    }
+
+
+
+  }
+
+}
+
+.page-about {
+  .cta-bar {
+    @include md {
+      margin-top: 55px;
+    }
+
+    @include lg {
+      margin-top: 110px;
+    }
+
+  }
 }
