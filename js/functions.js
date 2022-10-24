@@ -26,7 +26,7 @@
         var filterItemAll = $('.filter__item[data-filter="*"]');
         var filterActiveClass = 'filter__item--active';
         var grid = $('.__js_gallery-filter').isotope({
-            // itemSelector: '.works__item',
+            itemSelector: '.works__item',
             layoutMode: 'packery',
             packery: {
                 gutter: 0
