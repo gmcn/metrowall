@@ -88,6 +88,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 	}
 </script>
 
+<!-- Hotjar Tracking Code for https://www.metro-wall.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3187096,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 <!-- Facebook Pixel Code -->
 <script>
 	!function(f,b,e,v,n,t,s)
@@ -128,15 +140,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 				<?php if (is_front_page() || is_single() ) : ?>
 
 
-        <img class="d-md-none" src="<?php echo get_template_directory_uri(); ?>/images/logo_dark.svg" alt="<?php echo get_bloginfo(); ?>" loading="lazy">
+        <img class="d-lg-none" src="<?php echo get_template_directory_uri(); ?>/images/logo_dark.svg" alt="<?php echo get_bloginfo(); ?>" loading="lazy">
 
-        <img class="d-none d-md-flex" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php echo get_bloginfo(); ?>" loading="lazy">
+        <img class="d-none d-lg-flex" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php echo get_bloginfo(); ?>" loading="lazy">
 
 				<?php else: ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/logo_dark.svg" alt="<?php echo get_bloginfo(); ?>" loading="lazy">
 				<?php endif; ?>
 
 			</a>
+
+
+
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -154,8 +169,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 					) );
 				?>
 
-				<div class="inline-block ml-5 mt-3 mt-md-0 d-none d-md-flex">
-					<a class="quote" href="/quote">Have a project?
+				<div class="inline-block ml-2 ml-xl-5 mt-3 mt-md-0 d-none d-lg-flex">
+					<a class="quote" href="/quote">
+
+            GET A FREE QUOTE
 
 						<svg xmlns="http://www.w3.org/2000/svg" width="8.661" height="10.105" viewBox="0 0 8.661 10.105">
 						  <path id="play-button" d="M35.353,0l8.661,5.052L35.353,10.1Z" transform="translate(-35.353)" fill="#fff"/>
@@ -165,7 +182,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 					</a>
 				</div>
 
-				<div class="inline-block ml-5 mt-3 mt-md-0 d-none d-md-flex">
+				<div class="inline-block ml-2 ml-xl-5 mt-3 mt-md-0 d-none d-lg-flex">
 					<ul class="social">
 						<li>
 
@@ -229,8 +246,24 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 					</ul>
 				</div>
 
+
+
 	  </nav>
+
+
+
 
 	</header><!-- header -->
 
 	<div id="content" class="site-content">
+
+    <a class="quotemobile d-md-none" href="/quote">
+
+      GET A FREE QUOTE
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="8.661" height="10.105" viewBox="0 0 8.661 10.105">
+        <path id="play-button" d="M35.353,0l8.661,5.052L35.353,10.1Z" transform="translate(-35.353)" fill="#fff"/>
+      </svg>
+
+
+    </a>
