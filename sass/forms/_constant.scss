@@ -1,0 +1,48 @@
+.js-cm-form {
+
+
+  .form-group {
+
+
+    input:not([type='checkbox'])  {
+
+      display: block;
+      width: 100%;
+      height: calc(1.5em + 0.75rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 35px;
+      color: #999;
+
+
+
+    }
+
+    button {
+      margin: 0 auto !important;
+      display: inherit !important;
+      color: #e30b18 !important;
+      text-transform: uppercase !important;
+      font-weight: 600 !important;
+      font-family: "Montserrat",sans-serif !important;
+      font-size: 1em !important;
+      padding: 10px 0 !important;
+      border-bottom: 1px solid #e30b18 !important;
+      background: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-top: none !important;
+
+    }
+
+
+
+    // input[type='checkbox'] {
+    //   display: inline-block;
+    // }
+
+  }
+
+}
